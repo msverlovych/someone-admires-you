@@ -1,0 +1,19 @@
+{
+  "name": "admire",
+  "version": "1.0.0",
+  "description": "An animated rose that quietly admires someone — with a studio to make personalized links and QR codes.",
+  "private": true,
+  "scripts": {
+    "start": "parcel src/index.html src/create.html --open",
+    "dev": "parcel src/index.html src/create.html",
+    "build": "parcel build src/index.html src/create.html --public-url ./",
+    "clean": "rm -rf dist .parcel-cache"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

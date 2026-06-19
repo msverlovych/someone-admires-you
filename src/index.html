@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Someone, probably, admires you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./rose.css" />
+</head>
+<body>
+  <div class="ambient"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <div class="layer layer--petals" id="petals"></div>
+  <div class="layer layer--dust" id="dust"></div>
+  <div class="layer layer--burst" id="burst"></div>
+
+  <div class="scene">
+    <div class="tilt" id="tilt">
+      <div class="rose-wrap">
+        <div class="rose" id="rose">
+          <div class="rose__spin" id="spin"></div>
+          <div class="rose__light"></div>
+          <div class="rose__core"></div>
+          <div class="dew"></div>
+        </div>
+        <div class="stem">
+          <svg width="120" height="150" viewBox="0 0 120 150" fill="none">
+            <path class="draw" d="M60 0 C60 45 60 70 60 150" stroke="url(#g)" stroke-width="3.2" stroke-linecap="round"/>
+            <path class="leaf leaf--l" d="M60 64 C36 56 16 64 8 84 C30 92 52 86 60 64 Z" fill="url(#lf)"/>
+            <path class="leaf leaf--r" d="M60 92 C84 84 104 92 112 112 C90 120 68 114 60 92 Z" fill="url(#lf)"/>
+            <defs>
+              <linearGradient id="g" x1="60" y1="0" x2="60" y2="150" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3a6e34"/><stop offset="1" stop-color="#173a1c"/>
+              </linearGradient>
+              <linearGradient id="lf" x1="20" y1="60" x2="100" y2="120" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#3f7a3a"/><stop offset="1" stop-color="#173a1c"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="rose-shadow"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copy">
+    <span class="copy__label">a quiet truth</span>
+    <p class="copy__line" id="line"></p>
+    <p class="signature" id="sig"></p>
+    <p class="hint">move &nbsp;·&nbsp; click to scatter petals</p>
+  </div>
+
+  <script type="module" src="./rose.js"></script>
+</body>
+</html>
