@@ -82,6 +82,12 @@ enable Pages (build via **GitHub Actions**) in the repo settings, and update the
 
 ---
 
+## 📄 License
+
+The code in this project is released under the [MIT License](./LICENSE) —
+© 2026 Maksym Sverlovych. You're free to use, modify, and share it; just keep the
+copyright notice. (The background music has its own license — see below.)
+
 ## 🎶 Music credit
 
 The optional background music is **“Heartwarming” by Kevin MacLeod** (incompetech.com),

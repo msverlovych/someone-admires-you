@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "An animated rose that quietly admires someone — with a studio to make personalized links and QR codes.",
   "private": true,
+  "license": "MIT",
+  "author": "Maksym Sverlovych",
   "scripts": {
     "start": "parcel src/index.html src/create.html --open",
     "dev": "parcel src/index.html src/create.html",
