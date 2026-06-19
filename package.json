@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html src/create.html --open",
     "dev": "parcel src/index.html src/create.html",
-    "build": "parcel build src/index.html src/create.html --public-url ./",
+    "build": "parcel build src/index.html src/create.html --public-url https://msverlovych.github.io/someone-admires-you/",
     "clean": "rm -rf dist .parcel-cache"
   },
   "browserslist": "> 0.5%, last 2 versions, not dead",

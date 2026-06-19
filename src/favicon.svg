@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#190610"/>
+  <!-- stem -->
+  <rect x="15.2" y="15" width="1.6" height="12" rx="0.8" fill="#2f6b30"/>
+  <!-- leaf -->
+  <path d="M16 23 C12.5 22 9.5 24 8.5 27.5 C12.5 28 16 26.5 16 23 Z" fill="#3a7a3a"/>
+  <!-- rose bloom -->
+  <circle cx="16" cy="12.5" r="7.5" fill="#5d0c1d"/>
+  <circle cx="16" cy="12.5" r="6"   fill="#7a0f23"/>
+  <circle cx="16" cy="12"   r="4.3" fill="#bb1c38"/>
+  <circle cx="16" cy="12"   r="2.5" fill="#e84a64"/>
+  <circle cx="16" cy="12"   r="1.1" fill="#5d0c1d"/>
+</svg>
