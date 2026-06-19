@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://msverlovych.github.io/someone-admires-you/sitemap.xml
