@@ -165,3 +165,46 @@ if (!reduce) {
     }
   });
 }
+
+/* ---- gentle background music (opt-in, fades in/out) ---- */
+/* "Heartwarming" by Kevin MacLeod (incompetech.com) — CC BY 4.0. See README. */
+(function setupMusic() {
+  const btn = document.getElementById('musicToggle');
+  if (!btn) return;
+
+  const audio = new Audio(new URL('./music.mp3', import.meta.url));
+  audio.loop = true;
+  audio.preload = 'auto';
+  audio.volume = 0;
+
+  const TARGET = 0.32;            // never loud — it's a whisper, not a concert
+  let fade, playing = false;
+
+  function fadeTo(target, after) {
+    clearInterval(fade);
+    fade = setInterval(() => {
+      const step = 0.025;
+      if (Math.abs(audio.volume - target) <= step) {
+        audio.volume = target; clearInterval(fade); after && after();
+      } else {
+        audio.volume = Math.min(1, Math.max(0, audio.volume + (audio.volume < target ? step : -step)));
+      }
+    }, 40);
+  }
+
+  function setState(on) {
+    playing = on;
+    btn.classList.toggle('playing', on);
+    btn.setAttribute('aria-pressed', String(on));
+    btn.setAttribute('aria-label', on ? 'Pause music' : 'Play music');
+    btn.title = on ? 'Pause music' : 'Play music';
+  }
+
+  function play() {
+    audio.play().then(() => { setState(true); fadeTo(TARGET); })
+                .catch(() => {/* blocked until a real tap — user can press again */});
+  }
+  function pause() { fadeTo(0, () => audio.pause()); setState(false); }
+
+  btn.addEventListener('click', () => (playing ? pause() : play()));
+})();

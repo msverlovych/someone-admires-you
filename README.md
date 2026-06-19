@@ -82,4 +82,12 @@ enable Pages (build via **GitHub Actions**) in the repo settings, and update the
 
 ---
 
+## 🎶 Music credit
+
+The optional background music is **“Heartwarming” by Kevin MacLeod** (incompetech.com),
+licensed under [Creative Commons: By Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
+It plays only when a visitor taps the little music toggle — it never autoplays.
+
+---
+
 Made with care — because everyone deserves to be told, gently, that they're admired. 🌹
